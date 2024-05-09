@@ -1,0 +1,1272 @@
+[
+  {
+    "id": "5h56ufqhyf6uq9o",
+    "name": "track_twitter_ids",
+    "type": "base",
+    "system": false,
+    "schema": [
+      {
+        "id": "gpp3efo5",
+        "name": "twitter_id",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "pdipyerh",
+        "name": "environment",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "xgoussgn",
+        "name": "username",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      }
+    ],
+    "indexes": [],
+    "listRule": "@request.auth.id != \"\"",
+    "viewRule": null,
+    "createRule": null,
+    "updateRule": null,
+    "deleteRule": null,
+    "options": {}
+  },
+  {
+    "id": "9mtmj7gut2qmbuu",
+    "name": "spaces_kol_ids",
+    "type": "base",
+    "system": false,
+    "schema": [
+      {
+        "id": "yjyfmn0t",
+        "name": "twitter_id",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "exduphvu",
+        "name": "environment",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "qgi1g9ju",
+        "name": "details",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      }
+    ],
+    "indexes": [],
+    "listRule": "@request.auth.id != \"\"",
+    "viewRule": null,
+    "createRule": null,
+    "updateRule": null,
+    "deleteRule": null,
+    "options": {}
+  },
+  {
+    "id": "46qayvnt6xt3nh7",
+    "name": "spaces_discord_notification_history",
+    "type": "base",
+    "system": false,
+    "schema": [
+      {
+        "id": "mqrblqpu",
+        "name": "space_id",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "aslevlru",
+        "name": "discord_message_id",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "1i2nuywj",
+        "name": "discord_message_url",
+        "type": "url",
+        "system": false,
+        "required": true,
+        "options": {
+          "exceptDomains": null,
+          "onlyDomains": null
+        }
+      },
+      {
+        "id": "2xuwvx4m",
+        "name": "creator_id",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      }
+    ],
+    "indexes": [],
+    "listRule": "@request.auth.id != \"\"",
+    "viewRule": null,
+    "createRule": "@request.auth.id != \"\"",
+    "updateRule": null,
+    "deleteRule": null,
+    "options": {}
+  },
+  {
+    "id": "to309q98u984zqg",
+    "name": "vps_users",
+    "type": "base",
+    "system": false,
+    "schema": [
+      {
+        "id": "9xvasg8p",
+        "name": "vps_user",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "rnq7pcx5",
+        "name": "vps_ip",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "4m2oq01j",
+        "name": "auth_type",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "8iqxbl3q",
+        "name": "owner",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "kuuj46xt",
+        "name": "discord_id",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      }
+    ],
+    "indexes": [],
+    "listRule": "@request.auth.id != \"\"",
+    "viewRule": null,
+    "createRule": null,
+    "updateRule": null,
+    "deleteRule": null,
+    "options": {}
+  },
+  {
+    "id": "0n4vln4ljztt567",
+    "name": "vps_outages",
+    "type": "base",
+    "system": false,
+    "schema": [
+      {
+        "id": "vvwmfgyy",
+        "name": "vps_ip",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "lmqbbwny",
+        "name": "type",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "phtgezxf",
+        "name": "discord_message_id",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "4nyaqiee",
+        "name": "discord_message_url",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      }
+    ],
+    "indexes": [],
+    "listRule": "@request.auth.id != \"\"",
+    "viewRule": null,
+    "createRule": "@request.auth.id != \"\"",
+    "updateRule": "@request.auth.id != \"\"",
+    "deleteRule": null,
+    "options": {}
+  },
+  {
+    "id": "xg9ogkz2du70t64",
+    "name": "description_tags",
+    "type": "base",
+    "system": false,
+    "schema": [
+      {
+        "id": "zshbujam",
+        "name": "keyword",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "ibkdae2v",
+        "name": "color",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "r2y0zyt2",
+        "name": "interpolations",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      }
+    ],
+    "indexes": [],
+    "listRule": "",
+    "viewRule": null,
+    "createRule": null,
+    "updateRule": null,
+    "deleteRule": null,
+    "options": {}
+  },
+  {
+    "id": "tt20e1cmsugof62",
+    "name": "discord_users",
+    "type": "base",
+    "system": false,
+    "schema": [
+      {
+        "id": "rrq5fsug",
+        "name": "discord_id",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "ubhza66v",
+        "name": "username",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "b4rfzyzj",
+        "name": "coins",
+        "type": "number",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null
+        }
+      }
+    ],
+    "indexes": [
+      "CREATE INDEX `idx_j87WVm5` ON `discord_users` (`discord_id`)"
+    ],
+    "listRule": "",
+    "viewRule": "",
+    "createRule": null,
+    "updateRule": null,
+    "deleteRule": null,
+    "options": {}
+  },
+  {
+    "id": "s2gwdafr76zspo9",
+    "name": "discord_hot_takes",
+    "type": "base",
+    "system": false,
+    "schema": [
+      {
+        "id": "dqr0p0uk",
+        "name": "message_id",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "x84ojz9n",
+        "name": "author_id",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "okhey339",
+        "name": "author_name",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "cxwkpoqx",
+        "name": "content",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "ojrdsi69",
+        "name": "replies",
+        "type": "json",
+        "system": false,
+        "required": false,
+        "options": {}
+      },
+      {
+        "id": "pbwgcad2",
+        "name": "sent_at",
+        "type": "date",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": "",
+          "max": ""
+        }
+      }
+    ],
+    "indexes": [
+      "CREATE UNIQUE INDEX `idx_oKcKtgM` ON `discord_hot_takes` (`message_id`)"
+    ],
+    "listRule": null,
+    "viewRule": null,
+    "createRule": null,
+    "updateRule": null,
+    "deleteRule": null,
+    "options": {}
+  },
+  {
+    "id": "ivyedo6ekodtb5c",
+    "name": "followed_counter",
+    "type": "base",
+    "system": false,
+    "schema": [
+      {
+        "id": "pe4lrpty",
+        "name": "twitter_id",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "fmydrtvb",
+        "name": "username",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "rcvunesb",
+        "name": "count",
+        "type": "number",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": null,
+          "max": null
+        }
+      }
+    ],
+    "indexes": [],
+    "listRule": null,
+    "viewRule": null,
+    "createRule": null,
+    "updateRule": null,
+    "deleteRule": null,
+    "options": {}
+  },
+  {
+    "id": "ebvyv43mnzemddy",
+    "name": "following_changes",
+    "type": "base",
+    "system": false,
+    "schema": [
+      {
+        "id": "xfvmlhgq",
+        "name": "twitter_id",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "mte03rhk",
+        "name": "new_followings",
+        "type": "json",
+        "system": false,
+        "required": false,
+        "options": {}
+      },
+      {
+        "id": "z7yrgl9s",
+        "name": "new_unfollowings",
+        "type": "json",
+        "system": false,
+        "required": false,
+        "options": {}
+      },
+      {
+        "id": "ttm4utv0",
+        "name": "new_count",
+        "type": "number",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": null,
+          "max": null
+        }
+      },
+      {
+        "id": "4aw0pxez",
+        "name": "old_count",
+        "type": "number",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": null,
+          "max": null
+        }
+      },
+      {
+        "id": "mr0dhcqv",
+        "name": "new_following_ids",
+        "type": "json",
+        "system": false,
+        "required": false,
+        "options": {}
+      },
+      {
+        "id": "sin3qniq",
+        "name": "old_following_ids",
+        "type": "json",
+        "system": false,
+        "required": false,
+        "options": {}
+      }
+    ],
+    "indexes": [],
+    "listRule": null,
+    "viewRule": null,
+    "createRule": null,
+    "updateRule": null,
+    "deleteRule": null,
+    "options": {}
+  },
+  {
+    "id": "yht1p1pvkeh9pio",
+    "name": "following_changes_usernames",
+    "type": "base",
+    "system": false,
+    "schema": [
+      {
+        "id": "o95ylqun",
+        "name": "username",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "jblpqim4",
+        "name": "followed",
+        "type": "json",
+        "system": false,
+        "required": false,
+        "options": {}
+      },
+      {
+        "id": "6uk4xc0o",
+        "name": "unfollowed",
+        "type": "json",
+        "system": false,
+        "required": false,
+        "options": {}
+      },
+      {
+        "id": "cbhrbhf2",
+        "name": "discord_notif_timestamp",
+        "type": "date",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": "",
+          "max": ""
+        }
+      },
+      {
+        "id": "nlhz7uus",
+        "name": "new_followings",
+        "type": "json",
+        "system": false,
+        "required": false,
+        "options": {}
+      },
+      {
+        "id": "ogpki3sp",
+        "name": "old_followings",
+        "type": "json",
+        "system": false,
+        "required": false,
+        "options": {}
+      },
+      {
+        "id": "mziewq32",
+        "name": "followed_raw",
+        "type": "json",
+        "system": false,
+        "required": false,
+        "options": {}
+      }
+    ],
+    "indexes": [],
+    "listRule": null,
+    "viewRule": null,
+    "createRule": null,
+    "updateRule": null,
+    "deleteRule": null,
+    "options": {}
+  },
+  {
+    "id": "bb1i02g8udn5xos",
+    "name": "meat_award_history",
+    "type": "base",
+    "system": false,
+    "schema": [
+      {
+        "id": "xbpiimj9",
+        "name": "awarder_discord_id",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "sywupwg7",
+        "name": "discord_id",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "arpunrbx",
+        "name": "amount",
+        "type": "number",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null
+        }
+      },
+      {
+        "id": "yswgyxoh",
+        "name": "description",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "cp2niwac",
+        "name": "is_credit",
+        "type": "bool",
+        "system": false,
+        "required": false,
+        "options": {}
+      }
+    ],
+    "indexes": [],
+    "listRule": null,
+    "viewRule": null,
+    "createRule": null,
+    "updateRule": null,
+    "deleteRule": null,
+    "options": {}
+  },
+  {
+    "id": "3my93wdr64lbuuq",
+    "name": "meat_bot_messages",
+    "type": "base",
+    "system": false,
+    "schema": [
+      {
+        "id": "6a5v5jpf",
+        "name": "message_id",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "emwi4rei",
+        "name": "message",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "sh1m5yqf",
+        "name": "discord_id",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "muo7qk7m",
+        "name": "amount",
+        "type": "number",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null
+        }
+      }
+    ],
+    "indexes": [
+      "CREATE UNIQUE INDEX `idx_RBOMi6D` ON `meat_bot_messages` (`message_id`)"
+    ],
+    "listRule": null,
+    "viewRule": null,
+    "createRule": null,
+    "updateRule": null,
+    "deleteRule": null,
+    "options": {}
+  },
+  {
+    "id": "ew2dqr3myjkyfzy",
+    "name": "notifications_log",
+    "type": "base",
+    "system": false,
+    "schema": [
+      {
+        "id": "mk9ulegf",
+        "name": "twitter_id",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "ongyiji5",
+        "name": "description",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "sglmtdzt",
+        "name": "new_followings",
+        "type": "json",
+        "system": false,
+        "required": false,
+        "options": {}
+      },
+      {
+        "id": "cppc8ygq",
+        "name": "unfound_user_ids",
+        "type": "json",
+        "system": false,
+        "required": false,
+        "options": {}
+      }
+    ],
+    "indexes": [],
+    "listRule": null,
+    "viewRule": null,
+    "createRule": null,
+    "updateRule": null,
+    "deleteRule": null,
+    "options": {}
+  },
+  {
+    "id": "3wwp077sc51vfnu",
+    "name": "scheduled_spaces",
+    "type": "base",
+    "system": false,
+    "schema": [
+      {
+        "id": "f1lj3cle",
+        "name": "space_id",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "96dqelq3",
+        "name": "creator_id",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "nj2swbxu",
+        "name": "scheduled_start",
+        "type": "date",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": "",
+          "max": ""
+        }
+      },
+      {
+        "id": "3xpq3jua",
+        "name": "discord_message_id",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "l2nnf3uj",
+        "name": "discord_message_url",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      }
+    ],
+    "indexes": [],
+    "listRule": null,
+    "viewRule": null,
+    "createRule": null,
+    "updateRule": null,
+    "deleteRule": null,
+    "options": {}
+  },
+  {
+    "id": "thtvu7jodojqu36",
+    "name": "twitter_users",
+    "type": "base",
+    "system": false,
+    "schema": [
+      {
+        "id": "wrkfx9my",
+        "name": "twitter_id",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "guoraic5",
+        "name": "name",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "hs6hqdit",
+        "name": "username",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "colykujk",
+        "name": "url",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "umbeoehq",
+        "name": "entities",
+        "type": "json",
+        "system": false,
+        "required": false,
+        "options": {}
+      },
+      {
+        "id": "f9k6rmlz",
+        "name": "location",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "w0hqq3la",
+        "name": "pinned_tweet_id",
+        "type": "number",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null
+        }
+      },
+      {
+        "id": "fgn7pbyc",
+        "name": "profile_image_url",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "tqagw4p5",
+        "name": "verified",
+        "type": "bool",
+        "system": false,
+        "required": false,
+        "options": {}
+      },
+      {
+        "id": "rb64kxtg",
+        "name": "public_metrics",
+        "type": "json",
+        "system": false,
+        "required": false,
+        "options": {}
+      },
+      {
+        "id": "ig7wqxh5",
+        "name": "protected",
+        "type": "bool",
+        "system": false,
+        "required": false,
+        "options": {}
+      }
+    ],
+    "indexes": [],
+    "listRule": null,
+    "viewRule": null,
+    "createRule": null,
+    "updateRule": null,
+    "deleteRule": null,
+    "options": {}
+  },
+  {
+    "id": "6ckypuuyfyrqscq",
+    "name": "following_history",
+    "type": "base",
+    "system": false,
+    "schema": [
+      {
+        "id": "i65lbjrz",
+        "name": "twitter_id",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "srkxnihu",
+        "name": "following_ids",
+        "type": "json",
+        "system": false,
+        "required": false,
+        "options": {}
+      },
+      {
+        "id": "qxkcmalh",
+        "name": "following_usernames",
+        "type": "json",
+        "system": false,
+        "required": false,
+        "options": {}
+      },
+      {
+        "id": "dhybybh8",
+        "name": "count",
+        "type": "number",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": null,
+          "max": null
+        }
+      },
+      {
+        "id": "mwoocavk",
+        "name": "query_url",
+        "type": "url",
+        "system": false,
+        "required": false,
+        "options": {
+          "exceptDomains": [],
+          "onlyDomains": []
+        }
+      }
+    ],
+    "indexes": [],
+    "listRule": "id = @request.auth.id",
+    "viewRule": "id = @request.auth.id",
+    "createRule": "id = @request.auth.id",
+    "updateRule": "id = @request.auth.id",
+    "deleteRule": "",
+    "options": {}
+  },
+  {
+    "id": "utyqz7pj9yrfcww",
+    "name": "following_history_usernames",
+    "type": "base",
+    "system": false,
+    "schema": [
+      {
+        "id": "5sq1sc6a",
+        "name": "username",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "6fynhuff",
+        "name": "following_usernames",
+        "type": "json",
+        "system": false,
+        "required": false,
+        "options": {}
+      },
+      {
+        "id": "of6scawe",
+        "name": "count",
+        "type": "number",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null
+        }
+      }
+    ],
+    "indexes": [],
+    "listRule": "id = @request.auth.id",
+    "viewRule": "id = @request.auth.id",
+    "createRule": "id = @request.auth.id",
+    "updateRule": "id = @request.auth.id",
+    "deleteRule": null,
+    "options": {}
+  },
+  {
+    "id": "_pb_users_auth_",
+    "name": "users",
+    "type": "auth",
+    "system": false,
+    "schema": [
+      {
+        "id": "users_name",
+        "name": "name",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "users_avatar",
+        "name": "avatar",
+        "type": "file",
+        "system": false,
+        "required": false,
+        "options": {
+          "maxSelect": 1,
+          "maxSize": 5242880,
+          "mimeTypes": [
+            "image/jpg",
+            "image/jpeg",
+            "image/png",
+            "image/svg+xml",
+            "image/gif"
+          ],
+          "thumbs": null,
+          "protected": false
+        }
+      },
+      {
+        "id": "2tkweg5f",
+        "name": "handle",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      }
+    ],
+    "indexes": [],
+    "listRule": "id = @request.auth.id",
+    "viewRule": "id = @request.auth.id",
+    "createRule": "id = @request.auth.id",
+    "updateRule": "id = @request.auth.id",
+    "deleteRule": "id = @request.auth.id",
+    "options": {
+      "allowEmailAuth": true,
+      "allowOAuth2Auth": true,
+      "allowUsernameAuth": true,
+      "exceptEmailDomains": null,
+      "manageRule": null,
+      "minPasswordLength": 8,
+      "onlyEmailDomains": null,
+      "requireEmail": false
+    }
+  }
+]
